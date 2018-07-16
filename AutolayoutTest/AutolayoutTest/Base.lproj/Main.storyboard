@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是个自定义label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cG-wH-0dQ" customClass="CustomLabel">
+                                <rect key="frame" x="100" y="158" width="140.5" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140.5" id="X4h-Pg-E6e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="法国夺冠哈哈哈哈哈哈哈" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvN-Xu-l7p" customClass="CustomLabel">
+                                <rect key="frame" x="100" y="200" width="140.5" height="20.5"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这届世界杯法国夺冠了，真的太好看了" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-vR-DED" customClass="CustomLabel">
+                                <rect key="frame" x="100" y="179" width="140.5" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4cG-wH-0dQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="RuG-5a-3pD"/>
+                            <constraint firstItem="vfl-vR-DED" firstAttribute="trailing" secondItem="4cG-wH-0dQ" secondAttribute="trailing" id="WTy-ic-QjN"/>
+                            <constraint firstItem="vfl-vR-DED" firstAttribute="top" secondItem="4cG-wH-0dQ" secondAttribute="bottom" id="XCO-72-NuH"/>
+                            <constraint firstItem="4cG-wH-0dQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="138" id="bs1-Ek-ddO"/>
+                            <constraint firstItem="cvN-Xu-l7p" firstAttribute="trailing" secondItem="vfl-vR-DED" secondAttribute="trailing" id="epV-Qd-lYf"/>
+                            <constraint firstItem="vfl-vR-DED" firstAttribute="leading" secondItem="4cG-wH-0dQ" secondAttribute="leading" id="iKv-RO-GMl"/>
+                            <constraint firstItem="cvN-Xu-l7p" firstAttribute="top" secondItem="vfl-vR-DED" secondAttribute="bottom" id="twN-Op-7lc"/>
+                            <constraint firstItem="cvN-Xu-l7p" firstAttribute="leading" secondItem="vfl-vR-DED" secondAttribute="leading" id="vzk-7f-tgM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="4cG-wH-0dQ" id="xFP-Ld-5Hg"/>
+                        <outlet property="label2" destination="vfl-vR-DED" id="sBr-wS-cLq"/>
+                        <outlet property="label3" destination="cvN-Xu-l7p" id="Myh-y8-mlO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="-80"/>
+        </scene>
+    </scenes>
+</document>
