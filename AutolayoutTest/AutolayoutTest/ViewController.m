@@ -24,12 +24,6 @@
     NSLog(@"%@--\n%@--\n%@\n",self.label1,self.label2,self.label3);
 }
 
-- (void)test {
-    float w = self.view.bounds.size.width;
-    float h = self.view.bounds.size.height;
-    
-    
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
